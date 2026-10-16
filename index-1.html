@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>X Team | Free works - Screenshot Blocker for Android</title>
+<meta name="description" content="X Team builds free, open-source Android apps for a free community. Download Screenshot Blocker (APK) and read its source code.">
+<link rel="canonical" href="https://bluew9.github.io/">
+<style>
+  :root {
+    --bg: #070b14;
+    --surface: #0d1526;
+    --line: #1b2c52;
+    --blue: #3b8cff;
+    --blue-soft: #8fbaff;
+    --text: #cfe0ff;
+    --muted: #7f97c4;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Segoe UI", system-ui, Tahoma, Arial, sans-serif;
+    line-height: 1.75;
+  }
+  a { color: var(--blue); text-decoration: none; }
+  a:focus-visible { outline: 2px solid var(--blue-soft); outline-offset: 3px; }
+
+  header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 14px 24px;
+    border-bottom: 1px solid var(--line);
+  }
+  .brand { display: flex; align-items: center; gap: 10px; color: var(--blue); font-weight: 700; font-size: 1.25rem; }
+  .brand svg { width: 46px; height: 46px; }
+  nav { display: flex; gap: 18px; }
+  nav a { color: var(--muted); }
+  nav a:hover { color: var(--blue); }
+
+  main { max-width: 760px; margin: 0 auto; padding: 56px 20px 40px; }
+  h1 { color: var(--blue); font-size: clamp(1.9rem, 6vw, 2.8rem); line-height: 1.25; }
+  .lead { color: var(--muted); margin-top: 12px; font-size: 1.05rem; }
+  h2 { color: var(--blue); font-size: 1.4rem; margin: 56px 0 18px; }
+
+  .app {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 22px;
+    display: flex; gap: 18px; align-items: flex-start; flex-wrap: wrap;
+  }
+  .app-icon {
+    width: 64px; height: 64px; border-radius: 14px; flex: none;
+    background: linear-gradient(135deg, #1d4fa8, #3b8cff);
+    display: grid; place-items: center; font-size: 30px;
+  }
+  .app-body { flex: 1; min-width: 220px; }
+  .app h3 { color: var(--blue-soft); font-size: 1.2rem; }
+  .app p { margin: 6px 0 14px; }
+  .meta { color: var(--muted); font-size: .9rem; margin-bottom: 14px; }
+  .actions, .links { display: flex; gap: 10px; flex-wrap: wrap; }
+  .btn {
+    display: inline-block; padding: 9px 18px; border-radius: 8px;
+    border: 1px solid var(--blue); color: var(--blue); font-weight: 600; text-align: center;
+  }
+  .btn.primary { background: var(--blue); color: #04101f; }
+  .btn:hover { filter: brightness(1.15); }
+  .links .btn { min-width: 150px; }
+
+  footer {
+    text-align: center; color: var(--muted); font-size: .9rem;
+    padding: 30px 20px; border-top: 1px solid var(--line);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <a class="brand" href="#" aria-label="X Team">
+    <!-- Blue fedora in the style of the Red Hat logo -->
+    <svg viewBox="0 0 100 100" aria-hidden="true">
+      <ellipse cx="50" cy="66" rx="46" ry="13" fill="#3b8cff"/>
+      <path d="M22 62 C22 38 30 22 50 22 C70 22 78 38 78 62 C70 70 30 70 22 62Z" fill="#3b8cff"/>
+      <path d="M23 57 C34 64 66 64 77 57 L78 63 C68 71 32 71 22 63Z" fill="#0b2a63"/>
+      <path d="M40 30 C44 26 56 26 60 30" stroke="#8fbaff" stroke-width="3" fill="none" stroke-linecap="round"/>
+    </svg>
+    <span>X Team</span>
+  </a>
+  <nav>
+    <a href="#apps">Apps</a>
+    <a href="#developer">Developer</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Free works</h1>
+  <p class="lead">Aimed at a free community, with no commercial exploitation.</p>
+
+  <h2 id="apps">Apps</h2>
+
+  <!-- ===== Copy this card for every new app ===== -->
+  <article class="app">
+    <div class="app-icon">🛡️</div>
+    <div class="app-body">
+      <h3>Screenshot Blocker</h3>
+      <p>Prevents screenshots to protect your privacy.</p>
+      <div class="meta">Android • about 3 MB</div>
+      <div class="actions">
+        <a class="btn primary" href="https://github.com/BlueW9/screenshot-blocker/releases/download/v1.0.0/screenshot-blocker.apk">Download APK</a>
+        <a class="btn" href="https://github.com/BlueW9/screenshot-blocker" target="_blank" rel="noopener">Source code</a>
+      </div>
+    </div>
+  </article>
+  <!-- ===== End of card ===== -->
+
+  <h2 id="developer">Developer page links</h2>
+  <div class="links">
+    <a class="btn" href="https://github.com/BlueW9" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="https://gitlab.com/Bluew9" target="_blank" rel="noopener">GitLab</a>
+  </div>
+</main>
+
+<footer>© X Team • Free and open source</footer>
+
+</body>
+</html>
